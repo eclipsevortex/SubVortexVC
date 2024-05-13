@@ -233,6 +233,7 @@ class Validator:
                     current_block = self.subtensor.get_current_block()
 
                 time.sleep(5)
+                
                 if self.wallet.hotkey.ss58_address not in self.metagraph.hotkeys:
                     raise Exception(
                         f"Validator is not registered - hotkey {self.wallet.hotkey.ss58_address} not in metagraph"

@@ -148,7 +148,7 @@ class Miner:
         number_of_miners = len(
             [axon for axon in self.metagraph.axons if self.axon.external_ip == axon.ip]
         )
-        if number_of_miners > 1:
+        if False and number_of_miners > 1:
             bt.logging.error(
                 "At least one miner is already running on this machine. If you run more than one miner you will penalise all of your miners until you get de-registered or start each miner on a unique machine"
             )
